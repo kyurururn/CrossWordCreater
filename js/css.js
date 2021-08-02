@@ -1,4 +1,12 @@
+$(window).on('load',function(){
+    function end(){
+        $('.load').fadeOut();
+    }
+    setTimeout(end,1000);
+})
+
 $(function(){
+    
     function css(){
         if($(".main").height() >= $(".main").width()){
             $(".cw").height($(".main").width() * 0.9)

@@ -44,9 +44,9 @@ function character(ele){
 let select = 00
 
 let word = ["　　　　　",
-            "　　　ム　",
-            "　バルス　",
-            "　　　カ　",
+            "　　ム　　",
+            "バルス　　",
+            "　　カバン",
             "　　　　　"]
 
 for(let i = 0; i < word.length; i++){
@@ -60,3 +60,36 @@ for(let i = 0; i < word.length; i++){
 }
 
 
+document.addEventListener("keypress",(event) => {
+    let key = event.key
+    if(key == "r"){
+        document.getElementById("correct").style.visibility = "hidden"
+        document.getElementById("correct").style.display = "none"
+        document.getElementById("correct").style.opacity = 0
+        document.getElementById("00").innerHTML = "　"
+        document.getElementById("01").innerHTML = "　"
+        document.getElementById("02").innerHTML = "　"
+        document.getElementById("03").innerHTML = "　"
+        document.getElementById("04").innerHTML = "　"
+        document.getElementById("10").innerHTML = "　"
+        document.getElementById("11").innerHTML = "　"
+        document.getElementById("12").innerHTML = "　"
+        document.getElementById("13").innerHTML = "　"
+        document.getElementById("14").innerHTML = "　"
+        document.getElementById("20").innerHTML = "　"
+        document.getElementById("21").innerHTML = "　"
+        document.getElementById("22").innerHTML = "　"
+        document.getElementById("23").innerHTML = "　"
+        document.getElementById("24").innerHTML = "　"
+        document.getElementById("30").innerHTML = "　"
+        document.getElementById("31").innerHTML = "　"
+        document.getElementById("32").innerHTML = "　"
+        document.getElementById("33").innerHTML = "　"
+        document.getElementById("34").innerHTML = "　"
+        document.getElementById("40").innerHTML = "　"
+        document.getElementById("41").innerHTML = "　"
+        document.getElementById("42").innerHTML = "　"
+        document.getElementById("43").innerHTML = "　"
+        document.getElementById("44").innerHTML = "　"
+    }
+})
