@@ -41,7 +41,7 @@ function character(ele){
 }
 
 
-let select = 00
+let select = 0
 
 let word = ["　　　　　",
             "　　　ム　",
@@ -49,16 +49,19 @@ let word = ["　　　　　",
             "　　　カ　",
             "　　　　　"]
 
-for(let i = 0; i < word.length; i++){
-    for(let j = 0; j < word[i].length; j++){
-        if(word[i][j] == "　"){
-            document.getElementById(String(i)+String(j)).style.visibility = "hidden"
-        }else{
-            document.getElementById(String(i)+String(j)).style.visibility = "visible"
+function preparation(){
+    for(let i = 0; i < word.length; i++){
+        for(let j = 0; j < word[i].length; j++){
+            if(word[i][j] == "　"){
+                document.getElementById(String(i)+String(j)).style.visibility = "hidden"
+            }else{
+                document.getElementById(String(i)+String(j)).style.visibility = "visible"
+            }
         }
     }
 }
 
+preparation()
 
 document.addEventListener("keypress",(event) => {
     let key = event.key
@@ -91,5 +94,12 @@ document.addEventListener("keypress",(event) => {
         document.getElementById("42").innerHTML = "　"
         document.getElementById("43").innerHTML = "　"
         document.getElementById("44").innerHTML = "　"
+    }else if(key == "t"){
+        word[0] = window.prompt("1行目を入力してください")
+        word[1] = window.prompt("2行目を入力してください")
+        word[2] = window.prompt("3行目を入力してください")
+        word[3] = window.prompt("4行目を入力してください")
+        word[4] = window.prompt("5行目を入力してください")
+        preparation()
     }
 })
