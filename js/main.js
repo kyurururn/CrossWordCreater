@@ -44,9 +44,9 @@ function character(ele){
 let select = 00
 
 let word = ["　　　　　",
-            "　　ム　　",
-            "バルス　　",
-            "　　カバン",
+            "　　　ム　",
+            "　バルス　",
+            "　　　カ　",
             "　　　　　"]
 
 for(let i = 0; i < word.length; i++){
