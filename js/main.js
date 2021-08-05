@@ -97,11 +97,26 @@ document.addEventListener("keypress",(event) => {
         document.getElementById("43").innerHTML = "　"
         document.getElementById("44").innerHTML = "　"
     }else if(key == "t"){
-        word[0] = window.prompt("1行目を入力してください")
-        word[1] = window.prompt("2行目を入力してください")
-        word[2] = window.prompt("3行目を入力してください")
-        word[3] = window.prompt("4行目を入力してください")
-        word[4] = window.prompt("5行目を入力してください")
+        stock = window.prompt("1行目を入力してください")
+        if(stock.length == 5){
+            word[0] = window.prompt("1行目を入力してください")
+        }        
+        stock = window.prompt("2行目を入力してください")
+        if(stock.length == 5){
+            word[1] = window.prompt("2行目を入力してください")
+        }
+        stock = window.prompt("3行目を入力してください")
+        if(stock.length == 5){
+            word[2] = window.prompt("3行目を入力してください")
+        }
+        stock = window.prompt("4行目を入力してください")
+        if(stock.length == 5){
+            word[3] = window.prompt("4行目を入力してください")
+        }
+        stock = window.prompt("5行目を入力してください")
+        if(stock.length == 5){
+            word[4] = window.prompt("5行目を入力してください")
+        }
         preparation()
     }
 })
