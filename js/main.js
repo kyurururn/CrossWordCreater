@@ -8,35 +8,37 @@ function button(ele){
     })
 }
 
-function character(ele){
+function character(bool,ele){
     moji = ele
 
     document.getElementById("stock").style.visibility = "hidden"
     document.getElementById("stock").style.display = "none"
     document.getElementById("stock").style.opacity = 0
-
-    document.getElementById(select).innerHTML = moji
-
-    judge = true
-    for(let i = 0; i < 5; i++){
-        ju = ""
-        for(let j = 0; j < 5; j++){
-            if(document.getElementById(String(i) + String(j)).innerHTML == ""){
-                ju += "　"
-            }else{
-                ju += document.getElementById(String(i) + String(j)).innerHTML
+    if(bool){
+    
+        document.getElementById(select).innerHTML = moji
+    
+        judge = true
+        for(let i = 0; i < 5; i++){
+            ju = ""
+            for(let j = 0; j < 5; j++){
+                if(document.getElementById(String(i) + String(j)).innerHTML == ""){
+                    ju += "　"
+                }else{
+                    ju += document.getElementById(String(i) + String(j)).innerHTML
+                }
+                
             }
-            
+            judge = judge && ju == word[i]
         }
-        judge = judge && ju == word[i]
-    }
-
-    if(judge){
-        document.getElementById("correct").style.visibility = "visible"
-        document.getElementById("correct").style.display = "block"
-        $(function(){
-            $(".correct").animate({opacity:1},500)
-        })
+    
+        if(judge){
+            document.getElementById("correct").style.visibility = "visible"
+            document.getElementById("correct").style.display = "block"
+            $(function(){
+                $(".correct").animate({opacity:1},500)
+            })
+        }
     }
 }
 
