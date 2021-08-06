@@ -96,7 +96,7 @@ body{
     justify-content:center;
     align-items:center;
     border-radius:10px;
-    border:10px double rgb(118, 182, 255);
+    border:10px double lightgray;
 }
 
 .cw{
