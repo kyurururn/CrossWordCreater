@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <htad>
+        <title>CrossWord</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet"> 
+    </htad>
+    <body>
+        <div class="load" id="load">
+            <div class="sk-chase">
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+                <div class="sk-chase-dot"></div>
+              </div>
+        </div>
+        <img src="css/correct.png" class="correct" id="correct">
+        <div class="stock" id="stock">
+            <div class="stock_button" onclick="character(false,'')">
+            </div>
+            <div class="stock_switch">
+                <div class="パ" id="パ" onclick="character(true,this.id)">パ</div>
+                <div class="バ" id="バ" onclick="character(true,this.id)">バ</div>
+                <div class="ダ" id="ダ" onclick="character(true,this.id)">ダ</div>
+                <div class="ザ" id="ザ" onclick="character(true,this.id)">ザ</div>
+                <div class="ガ" id="ガ" onclick="character(true,this.id)">ガ</div>
+                <div class="ワ" id="ワ" onclick="character(true,this.id)">ワ</div>
+                <div class="ラ" id="ラ" onclick="character(true,this.id)">ラ</div>
+                <div class="ヤ" id="ヤ" onclick="character(true,this.id)">ヤ</div>
+                <div class="マ" id="マ" onclick="character(true,this.id)">マ</div>
+                <div class="ハ" id="ハ" onclick="character(true,this.id)">ハ</div>
+                <div class="ナ" id="ナ" onclick="character(true,this.id)">ナ</div>
+                <div class="タ" id="タ" onclick="character(true,this.id)">タ</div>
+                <div class="サ" id="サ" onclick="character(true,this.id)">サ</div>
+                <div class="カ" id="カ" onclick="character(true,this.id)">カ</div>
+                <div class="ア" id="ア" onclick="character(true,this.id)">ア</div>
+                <div class="ピ" id="ピ" onclick="character(true,this.id)">ピ</div>
+                <div class="ビ" id="ビ" onclick="character(true,this.id)">ビ</div>
+                <div class="ヂ" id="ヂ" onclick="character(true,this.id)">ヂ</div>
+                <div class="ジ" id="ジ" onclick="character(true,this.id)">ジ</div>
+                <div class="ギ" id="ギ" onclick="character(true,this.id)">ギ</div>
+                <div class="ヲ" id="ヲ" onclick="character(true,this.id)">ヲ</div>
+                <div class="リ" id="リ" onclick="character(true,this.id)">リ</div>
+                <div class="ユ" id="ユ" onclick="character(true,this.id)">ユ</div>
+                <div class="ミ" id="ミ" onclick="character(true,this.id)">ミ</div>
+                <div class="ヒ" id="ヒ" onclick="character(true,this.id)">ヒ</div>
+                <div class="ニ" id="ニ" onclick="character(true,this.id)">ニ</div>
+                <div class="チ" id="チ" onclick="character(true,this.id)">チ</div>
+                <div class="シ" id="シ" onclick="character(true,this.id)">シ</div>
+                <div class="キ" id="キ" onclick="character(true,this.id)">キ</div>
+                <div class="イ" id="イ" onclick="character(true,this.id)">イ</div>
+                <div class="プ" id="プ" onclick="character(true,this.id)">プ</div>
+                <div class="ブ" id="ブ" onclick="character(true,this.id)">ブ</div>
+                <div class="ヅ" id="ヅ" onclick="character(true,this.id)">ヅ</div>
+                <div class="ズ" id="ズ" onclick="character(true,this.id)">ズ</div>
+                <div class="グ" id="グ" onclick="character(true,this.id)">グ</div>
+                <div class="ン" id="ン" onclick="character(true,this.id)">ン</div>
+                <div class="ル" id="ル" onclick="character(true,this.id)">ル</div>
+                <div class="ヨ" id="ヨ" onclick="character(true,this.id)">ヨ</div>
+                <div class="ム" id="ム" onclick="character(true,this.id)">ム</div>
+                <div class="フ" id="フ" onclick="character(true,this.id)">フ</div>
+                <div class="ヌ" id="ヌ" onclick="character(true,this.id)">ヌ</div>
+                <div class="ツ" id="ツ" onclick="character(true,this.id)">ツ</div>
+                <div class="ス" id="ス" onclick="character(true,this.id)">ス</div>
+                <div class="ク" id="ク" onclick="character(true,this.id)">ク</div>
+                <div class="ウ" id="ウ" onclick="character(true,this.id)">ウ</div>
+                <div class="ペ" id="ペ" onclick="character(true,this.id)">ペ</div>
+                <div class="ベ" id="ベ" onclick="character(true,this.id)">ベ</div>
+                <div class="デ" id="デ" onclick="character(true,this.id)">デ</div>
+                <div class="ゼ" id="ゼ" onclick="character(true,this.id)">ゼ</div>
+                <div class="ゲ" id="ゲ" onclick="character(true,this.id)">ゲ</div>
+                <div class="ー" id="ー" onclick="character(true,this.id)">ー</div>
+                <div class="レ" id="レ" onclick="character(true,this.id)">レ</div>
+                <div class="　" id="　" onclick="character(true,this.id)">　</div>
+                <div class="メ" id="メ" onclick="character(true,this.id)">メ</div>
+                <div class="ヘ" id="ヘ" onclick="character(true,this.id)">ヘ</div>
+                <div class="ネ" id="ネ" onclick="character(true,this.id)">ネ</div>
+                <div class="テ" id="テ" onclick="character(true,this.id)">テ</div>
+                <div class="セ" id="セ" onclick="character(true,this.id)">セ</div>
+                <div class="ケ" id="ケ" onclick="character(true,this.id)">ケ</div>
+                <div class="エ" id="エ" onclick="character(true,this.id)">エ</div>
+                <div class="ポ" id="ポ" onclick="character(true,this.id)">ポ</div>
+                <div class="ボ" id="ボ" onclick="character(true,this.id)">ボ</div>
+                <div class="ド" id="ド" onclick="character(true,this.id)">ド</div>
+                <div class="ゾ" id="ゾ" onclick="character(true,this.id)">ゾ</div>
+                <div class="ゴ" id="ゴ" onclick="character(true,this.id)">ゴ</div>
+                <div class="  " id="  " onclick="character(true,this.id)">  </div>
+                <div class="ロ" id="ロ" onclick="character(true,this.id)">ロ</div>
+                <div class="  " id="  " onclick="character(true,this.id)">  </div>
+                <div class="モ" id="モ" onclick="character(true,this.id)">モ</div>
+                <div class="ホ" id="ホ" onclick="character(true,this.id)">ホ</div>
+                <div class="ノ" id="ノ" onclick="character(true,this.id)">ノ</div>
+                <div class="ト" id="ト" onclick="character(true,this.id)">ト</div>
+                <div class="ソ" id="ソ" onclick="character(true,this.id)">ソ</div>
+                <div class="コ" id="コ" onclick="character(true,this.id)">コ</div>
+                <div class="オ" id="オ" onclick="character(true,this.id)">オ</div>
+            </div>
+            <div class="stock_button" onclick="character(false,'')">
+            </div>
+        </div>
+        <div class="mm">
+            <div class="left">
+                <div class="left_title">
+                    タテのカギ
+                </div>
+                <div class="left_key" id="key_t"></div>
+            </div>
+            <div class="main">
+                <div class="cw">
+                    <div class="00" id="00" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="01" id="01" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="02" id="02" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="03" id="03" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="04" id="04" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="10" id="10" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="11" id="11" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="12" id="12" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="13" id="13" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="14" id="14" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="20" id="20" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="21" id="21" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="22" id="22" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="23" id="23" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="24" id="24" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="30" id="30" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="31" id="31" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="32" id="32" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="33" id="33" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="34" id="34" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="40" id="40" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="41" id="41" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="42" id="42" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="43" id="43" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                    <div class="44" id="44" onclick="button(this)">
+                        <div id="chara"></div>
+                        <div id="num"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="left_title">
+                    ヨコのカギ
+                </div>
+                <div class="left_key" id="key_y"></div>
+                
+            </div>
+        </div>
+
+        <div class="id" id="id"></div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="js/css.js"></script>
+        <script src="js/difficult.js"></script>
+    </body>
+</html>
