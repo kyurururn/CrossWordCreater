@@ -96,9 +96,9 @@ let hint = {"ダッフィー":"「天空の城ラピュタ」のパズーの親�
             "ラピュタ":"ムスカの本名は「ロムスカ・パロ・ウル・〇〇〇〇」"
            }
 
-let num = 1 //Math.floor(Math.random() * word.length)
+let num = Math.floor(Math.random() * word.length)
 
-document.getElementById("id").innerHTML = num
+document.getElementById("id").innerHTML = num + 15
 
 preparation()
 
